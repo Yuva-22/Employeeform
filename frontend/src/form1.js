@@ -41,6 +41,17 @@ const Form1 = () => {
       return;
     }
 
+  const dob = new Date(formData.dob);
+  const today = new Date();
+  const age = today.getFullYear() - dob.getFullYear();
+  const monthDiff = today.getMonth() - dob.getMonth();
+  
+
+  if (age < 25) {
+    alert('Employee must be at least 25 years old');
+    return;
+  }
+
     // const response = await fetch('http://localhost:3001', {
     //   method: 'POST',
     //   headers: {

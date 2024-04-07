@@ -46,7 +46,7 @@ const Form2 = () => {
   return (
     <div className='form2'>
         <div className='form-container'>
-            <h1>Form Page 2</h1>
+            <h1>Employee Registration Form</h1>
             <form onSubmit={handleSubmit}>
                 <label>
                 Phone:
